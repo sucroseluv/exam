@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/mynav"
+    app:startDestination="@id/mainScreen">
+
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="com.morlag.exam.main_screen.MainScreen"
+        android:label="MainScreen" />
+    <fragment
+        android:id="@+id/compilationScreen"
+        android:name="com.morlag.exam.compilation_screen.CompilationScreen"
+        android:label="CompilationScreen" />
+    <fragment
+        android:id="@+id/collectionsScreen"
+        android:name="com.morlag.exam.collections_screen.CollectionsScreen"
+        android:label="CollectionsScreen" />
+    <fragment
+        android:id="@+id/profileScreen"
+        android:name="com.morlag.exam.profile_screen.ProfileScreen"
+        android:label="ProfileScreen" />
+</navigation>

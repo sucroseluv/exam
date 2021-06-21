@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="64dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/ic_wc" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_worldcinema" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="64dp"
+                android:orientation="vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/back_border"
+                    android:ems="10"
+                    android:hint="Имя"
+                    android:inputType="textPersonName"
+                    android:padding="16dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#afafaf" />
+
+                <EditText
+                    android:id="@+id/lastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/back_border"
+                    android:ems="10"
+                    android:hint="Фамилия"
+                    android:inputType="textPassword"
+                    android:padding="16dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#afafaf" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/back_border"
+                    android:ems="10"
+                    android:hint="E-mail"
+                    android:inputType="textPersonName"
+                    android:padding="16dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#afafaf" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/back_border"
+                    android:ems="10"
+                    android:hint="Пароль"
+                    android:inputType="textPassword"
+                    android:padding="16dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#afafaf" />
+
+                <EditText
+                    android:id="@+id/repeatPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_border"
+                    android:ems="10"
+                    android:hint="Повторите пароль"
+                    android:inputType="textPassword"
+                    android:padding="16dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#afafaf" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/back_orange"
+                android:text="Зарегистрироваться"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/register"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/signin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/back_border"
+                android:text="У меня уже есть аккаунт"
+                android:textColor="#EF3A01"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
