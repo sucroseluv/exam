@@ -109,7 +109,7 @@ public class Api {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 Map<String,String> s = new HashMap<>();
-                s.put("header", c.getSharedPreferences("prefs",Context.MODE_PRIVATE).getString("token",""));
+                s.put("Authorization:", "Bearer "+c.getSharedPreferences("prefs",Context.MODE_PRIVATE).getString("token",""));
                 return s;
             }
         };
